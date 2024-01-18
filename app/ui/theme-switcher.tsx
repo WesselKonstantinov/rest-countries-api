@@ -19,6 +19,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
+      aria-live="polite"
       className="inline-flex gap-2 items-center py-4 md:py-3 font-semibold text-xs md:text-base"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
@@ -27,6 +28,7 @@ export default function ThemeSwitcher() {
       ) : (
         <MoonIcon className="size-4 md:size-5" />
       )}
+      <span className="sr-only">Switch to</span>
       <span className="capitalize">
         {theme === "dark" ? "light" : "dark"} mode
       </span>
