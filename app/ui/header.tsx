@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ThemeSwitcher from "./theme-switcher";
 
 export default function Header() {
   return (
@@ -11,10 +12,11 @@ export default function Header() {
             alt="Where in the world? - Home"
             width={230}
             height={19}
-            className="w-[8.4375rem] md:w-[14.375rem] h-[1.25rem] md:h-[2.0625rem] dark:invert"
+            priority
+            className="w-[8.4375rem] md:w-[14.375rem] h-auto dark:invert"
           />
         </Link>
-        <p>Button</p>
+        <ThemeSwitcher />
       </div>
     </header>
   );
