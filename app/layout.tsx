@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { nunitoSans } from "./ui/fonts";
 import "./ui/globals.css";
 import Header from "./ui/header";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,12 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`bg-light-primary dark:bg-dark-primary ${nunitoSans.className}`}
       >
-        <Header />
-        {children}
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
