@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { nunitoSans } from "./ui/fonts";
 import "./ui/globals.css";
+import Header from "./ui/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body
         className={`bg-light-primary dark:bg-dark-primary ${nunitoSans.className}`}
       >
+        <Header />
         {children}
       </body>
     </html>
