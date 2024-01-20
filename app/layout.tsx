@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={`bg-light-primary dark:bg-dark-primary ${nunitoSans.className}`}
       >
-        <Providers>
+        <Providers attribute="class">
           <Header />
           {children}
         </Providers>
