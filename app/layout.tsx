@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`bg-light-primary dark:bg-dark-primary ${nunitoSans.className}`}
+        className={`bg-light-primary dark:bg-dark-primary text-light-primary dark:text-dark ${nunitoSans.className}`}
       >
         <Providers attribute="class">
           <Header />
