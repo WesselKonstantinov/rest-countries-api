@@ -12,4 +12,11 @@
     --color-text-light: 200deg 15% 8%;
     --color-input-light: 0deg 0% 52%;
   }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
 }
