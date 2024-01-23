@@ -15,6 +15,12 @@ const config: Config = {
         "dark-primary": "hsl(var(--color-bg-dark) / 1)",
         "dark-secondary": "hsl(var(--color-elem-dark) / 1)",
       },
+      gap: {
+        "18": "4.6875rem",
+      },
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(min(14rem, 100%), 1fr))",
+      },
       textColor: {
         "light-primary": "hsl(var(--color-text-light) / 1)",
         "light-secondary": "hsl(var(--color-input-light) / 1)",
