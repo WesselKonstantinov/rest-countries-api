@@ -21,7 +21,9 @@ export default function RootLayout({
       >
         <Providers attribute="class">
           <Header />
-          {children}
+          <main className="my-6 md:my-12 px-4">
+            <div className="max-w-[80rem] mx-auto">{children}</div>
+          </main>
         </Providers>
       </body>
     </html>
