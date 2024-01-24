@@ -9,7 +9,7 @@ export default function CountryCard({ country }: CountryCardProps) {
   const countryStats = {
     population: country.population,
     region: country.region,
-    capital: `${country.capital && country.capital.join(", ")}`, // Avoid TypeError
+    capital: country.capital.join(", "),
   };
 
   return (
