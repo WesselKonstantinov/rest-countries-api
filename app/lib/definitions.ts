@@ -4,6 +4,7 @@ export type Country = {
   capital: string[];
   region: string;
   population: number;
+  cca3: string;
 };
 
 export type Flags = {
