@@ -14,7 +14,7 @@ export async function getCountries(): Promise<Country[]> {
 
 export async function getCountryByCode(code: string): Promise<Country> {
   const res = await fetch(
-    `https://restcountries.com/v3.1/alpha/${code}?fields=name,capital,population,region,flags,cca3`
+    `https://restcountries.com/v3.1/alpha/${code}?fields=name,capital,population,region,flags,cca3,subregion,tld,currencies,languages,borders`
   );
 
   if (!res.ok) {
