@@ -20,6 +20,10 @@ const config: Config = {
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(min(14rem, 100%), 1fr))",
+        "fluid-links": "repeat(auto-fit, minmax(6rem, 1fr))",
+      },
+      lineHeight: {
+        tight: "1.1",
       },
       textColor: {
         "light-primary": "hsl(var(--color-text-light) / 1)",
