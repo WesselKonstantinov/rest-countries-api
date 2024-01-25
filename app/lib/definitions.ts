@@ -3,8 +3,15 @@ export type Country = {
   name: Name;
   capital: string[];
   region: string;
+  subregion?: string;
   population: number;
   cca3: string;
+  tld?: string[];
+  currencies?: Currencies;
+  languages?: {
+    [key: string]: string;
+  };
+  borders?: string[];
 };
 
 export type Flags = {
@@ -23,5 +30,12 @@ export type NativeName = {
   [key: string]: {
     official: string;
     common: string;
+  };
+};
+
+export type Currencies = {
+  [key: string]: {
+    name: string;
+    symbol: string;
   };
 };
