@@ -19,7 +19,7 @@ const config: Config = {
         "18": "4.625rem",
       },
       gridTemplateColumns: {
-        fluid: "repeat(auto-fit, minmax(min(14rem, 100%), 1fr))",
+        fluid: "repeat(auto-fit, min(16.5rem, 100%))",
         "fluid-links": "repeat(auto-fit, minmax(6rem, 1fr))",
       },
       lineHeight: {
