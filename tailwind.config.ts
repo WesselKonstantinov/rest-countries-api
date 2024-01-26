@@ -16,7 +16,7 @@ const config: Config = {
         "dark-secondary": "hsl(var(--color-elem-dark) / 1)",
       },
       gap: {
-        "18": "4.6875rem",
+        "18": "4.625rem",
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(min(14rem, 100%), 1fr))",
