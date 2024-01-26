@@ -34,9 +34,9 @@ export default async function DetailPage({
       ));
   };
 
-  const nativeName = Object.values(country.name.nativeName)[0].common;
+  const nativeName = Object.values(country.name.nativeName)[0]?.common;
   const currencies =
-    country.currencies && Object.values(country.currencies)[0].name;
+    country.currencies && Object.values(country.currencies)[0]?.name;
   const languages =
     country.languages && Object.values(country.languages).join(", ");
 
