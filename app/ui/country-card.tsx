@@ -29,7 +29,7 @@ export default function CountryCard({ country }: CountryCardProps) {
           </div>
         </dl>
       </div>
-      <div className="relative h-[160px]">
+      <div className="relative h-40">
         <Image
           src={country.flags.svg}
           alt={`${country.flags.alt}`}
