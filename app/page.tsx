@@ -11,7 +11,9 @@ export default async function Home({
 }) {
   const countries: Country[] = await getCountries();
   const filteredCountries: Country[] = countries.filter((country) =>
-    country.name.common.toLowerCase().includes(searchParams?.query || "")
+    country.name.common
+      .toLowerCase()
+      .includes(searchParams?.query?.toLowerCase() || "")
   );
 
   return (
@@ -19,7 +21,7 @@ export default async function Home({
       <div>
         <SearchBar placeholder="Search for a country..." />
       </div>
-      <ul className="mx-10 md:mx-0 mt-8 md:mt-12 grid grid-cols-fluid auto-rows-[minmax(21rem,_1fr)] gap-10 lg:gap-18">
+      <ul className="mt-8 md:mt-12 grid grid-cols-fluid justify-center auto-rows-[minmax(21rem,_1fr)] gap-10 lg:gap-18">
         {filteredCountries.map((country) => (
           <li key={country.name.common}>
             <Link href={`/country/${country.cca3}`}>
