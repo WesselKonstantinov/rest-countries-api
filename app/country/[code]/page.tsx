@@ -41,7 +41,7 @@ export default async function DetailPage({
     country.languages && Object.values(country.languages).join(", ");
 
   return (
-    <div className="mx-3 md:mx-0">
+    <div className="mx-3 md:mx-0 mt-10 md:mt-20">
       <Link
         href="/"
         className="w-fit px-6 py-[0.375rem] md:px-9 md:py-2 flex items-center gap-2 md:gap-[0.625rem] rounded-sm md:rounded-md bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.4375rem_0_rgba(0,0,0,0.29)] text-sm md:text-base font-light"
