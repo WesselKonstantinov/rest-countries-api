@@ -17,6 +17,7 @@ const config: Config = {
       },
       gap: {
         "18": "4.625rem",
+        fluid: "clamp(2.75rem, 0.5761rem + 10.8696vi, 9rem)",
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, min(16.5rem, 100%))",
