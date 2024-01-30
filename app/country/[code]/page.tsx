@@ -50,8 +50,8 @@ export default async function DetailPage({
         <span>Back</span>
         <span className="sr-only">to home</span>
       </Link>
-      <div className="mt-16 md:mt-20 grid gap-y-11">
-        <div className="relative flex justify-center items-center aspect-[16/11.5] rounded-md md:rounded-[0.625rem] overflow-hidden">
+      <div className="mt-16 md:mt-20 flex flex-wrap gap-fluid">
+        <div className="grow basis-[calc((50rem-100%)*999)] self-start relative flex justify-center items-center aspect-[16/11.5] rounded-md md:rounded-[0.625rem] overflow-hidden">
           <Image
             src={country.flags.svg}
             alt={`${country.flags.alt}`}
@@ -60,12 +60,12 @@ export default async function DetailPage({
             className="object-cover"
           />
         </div>
-        <div>
+        <div className="grow basis-[calc((50rem-100%)*999)] self-center">
           <h1 className="text-[1.375rem] md:text-[2rem] leading-tight font-extrabold">
             {country.name.common}
           </h1>
-          <div className="mt-4 md:mt-6 flex flex-col gap-8">
-            <dl className="flex flex-col gap-2 text-sm md:text-base">
+          <div className="mt-4 md:mt-6 flex flex-wrap gap-8">
+            <dl className="grow flex flex-col gap-2 text-sm md:text-base">
               <div className="flex flex-wrap gap-1">
                 <dt className="font-semibold after:content-[':']">
                   Native Name
@@ -95,7 +95,7 @@ export default async function DetailPage({
                 <dd className="font-light">{country.capital.join(", ")}</dd>
               </div>
             </dl>
-            <dl className="flex flex-col gap-2 text-sm md:text-base">
+            <dl className="grow flex flex-col gap-2 text-sm md:text-base">
               <div className="flex flex-wrap gap-1">
                 <dt className="font-semibold after:content-[':']">
                   Top Level Domain
