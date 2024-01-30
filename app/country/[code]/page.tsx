@@ -115,11 +115,11 @@ export default async function DetailPage({
             </dl>
           </div>
           {country.borders && country.borders.length > 0 && (
-            <dl className="mt-[2.125rem] md:mt-[4.375rem] flex flex-col gap-4">
-              <dt className="text-base font-semibold after:content-[':']">
+            <dl className="mt-[2.125rem] md:mt-[4.375rem] flex flex-wrap gap-4">
+              <dt className="basis-[auto] grow text-base font-semibold after:content-[':']">
                 Border Countries
               </dt>
-              <dd>
+              <dd className="basis-0 grow-[999] min-w-[60%]">
                 <ul
                   role="list"
                   className="grid grid-cols-fluid-links gap-[0.625rem]"
