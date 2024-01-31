@@ -23,7 +23,7 @@ export default async function Home({
 
   return (
     <>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-between gap-x-2 gap-y-10">
         <SearchBar placeholder="Search for a country..." />
         <RegionFilter />
       </div>
