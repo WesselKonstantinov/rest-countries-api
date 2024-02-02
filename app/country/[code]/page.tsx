@@ -1,14 +1,19 @@
 import { getCountryByCode, getCountries } from "@/app/lib/data";
-import { Country } from "@/app/lib/definitions";
+import { Country, Params } from "@/app/lib/definitions";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function DetailPage({
-  params,
-}: {
-  params: { code: string };
-}) {
+export async function generateMetadata({ params }: Params) {
+  const code = params.code;
+  const country = await getCountryByCode(code);
+
+  return {
+    title: country.name.common,
+  };
+}
+
+export default async function DetailPage({ params }: Params) {
   const countries: Country[] = await getCountries();
   const country: Country = await getCountryByCode(params.code);
 
