@@ -46,3 +46,9 @@ export type SearchParams = {
     region?: string;
   };
 };
+
+export type Params = {
+  params: {
+    code: string;
+  };
+};
