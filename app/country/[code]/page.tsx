@@ -31,7 +31,7 @@ export default async function DetailPage({ params }: Params) {
         <li role="listitem" key={country.name}>
           <Link
             href={`/country/${country.cca3}`}
-            className="block p-[0.375rem] rounded-sm bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.25rem_0.0625rem_rgba(0,0,0,0.1)] text-xs md:text-sm font-light text-center"
+            className="block px-4 py-1.5 rounded-sm bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.25rem_0.0625rem_rgba(0,0,0,0.1)] text-xs md:text-sm font-light text-center"
           >
             {country.name}
           </Link>
@@ -125,10 +125,7 @@ export default async function DetailPage({ params }: Params) {
                 Border Countries
               </dt>
               <dd className="basis-0 grow-[999] min-w-[60%]">
-                <ul
-                  role="list"
-                  className="grid grid-cols-fluid-links gap-[0.625rem]"
-                >
+                <ul role="list" className="flex flex-wrap gap-[0.625rem]">
                   {getBorderCountryLinks(country, countries)}
                 </ul>
               </dd>
