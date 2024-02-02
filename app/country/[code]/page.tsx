@@ -20,24 +20,19 @@ export default async function DetailPage({ params }: Params) {
   const getBorderCountryLinks = (
     currentCountry: Country,
     countries: Country[]
-  ): JSX.Element[] => {
-    return countries
+  ): JSX.Element[] =>
+    countries
       .filter((country) => currentCountry.borders?.includes(country.cca3))
-      .map((country) => ({
-        name: country.name.common,
-        cca3: country.cca3,
-      }))
       .map((country) => (
-        <li role="listitem" key={country.name}>
+        <li role="listitem" key={country.cca3}>
           <Link
             href={`/country/${country.cca3}`}
             className="block px-4 py-1.5 rounded-sm bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.25rem_0.0625rem_rgba(0,0,0,0.1)] text-xs md:text-sm font-light text-center"
           >
-            {country.name}
+            {country.name.common}
           </Link>
         </li>
       ));
-  };
 
   const nativeName = Object.values(country.name.nativeName)[0]?.common;
   const currencies =
