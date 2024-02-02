@@ -39,3 +39,10 @@ export type Currencies = {
     symbol: string;
   };
 };
+
+export type SearchParams = {
+  searchParams?: {
+    query?: string;
+    region?: string;
+  };
+};
