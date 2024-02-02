@@ -24,7 +24,7 @@ export default function SearchBar({ placeholder }: SearchBarProps) {
   }, 300);
 
   return (
-    <div className="basis-[30rem] relative">
+    <div className="w-full max-w-[30rem] relative">
       <label htmlFor="search" className="sr-only">
         Search
       </label>

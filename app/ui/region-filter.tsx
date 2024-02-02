@@ -19,7 +19,7 @@ export default function RegionFilter() {
   };
 
   return (
-    <div className="basis-[12.5rem] relative bg-light-secondary dark:bg-dark-secondary rounded-[0.3125rem] shadow-[0_0.125rem_0.5625rem_0_rgba(0,0,0,0.05)] cursor-pointer">
+    <div className="w-full max-w-[12.5rem] relative bg-light-secondary dark:bg-dark-secondary rounded-[0.3125rem] shadow-[0_0.125rem_0.5625rem_0_rgba(0,0,0,0.05)] cursor-pointer">
       <label htmlFor="region-select" className="sr-only">
         Filter by region:
       </label>
