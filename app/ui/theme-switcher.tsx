@@ -19,8 +19,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      aria-live="polite"
-      className="inline-flex gap-2 items-center py-4 md:py-3 font-semibold text-xs md:text-base"
+      className="inline-flex gap-2 items-center py-4 md:py-3 font-semibold text-xs md:text-base focus-visible"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? (

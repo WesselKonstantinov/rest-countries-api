@@ -27,7 +27,7 @@ export default function RegionFilter() {
         id="region-select"
         defaultValue={searchParams.get("region")?.toString()}
         onChange={(e) => handleSelect(e.target.value)}
-        className="size-full px-6 py-3.5 md:py-[1.125rem] appearance-none bg-transparent border-none text-xs md:text-sm"
+        className="size-full px-6 py-3.5 md:py-[1.125rem] appearance-none bg-transparent border-none text-xs md:text-sm focus-visible"
       >
         <option value="">Filter by Region</option>
         <option value="africa">Africa</option>

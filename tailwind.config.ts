@@ -25,6 +25,10 @@ const config: Config = {
       lineHeight: {
         tight: "1.1",
       },
+      outlineColor: {
+        default: "hsl(var(--color-elem-dark) / 1)",
+        inverted: "hsl(var(--color-elem-light) / 1)",
+      },
       textColor: {
         "light-primary": "hsl(var(--color-text-light) / 1)",
         "light-secondary": "hsl(var(--color-input-light) / 1)",

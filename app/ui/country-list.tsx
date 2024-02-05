@@ -23,7 +23,10 @@ export default async function CountryList({ searchParams }: SearchParams) {
     <ul className="mt-8 md:mt-12 grid grid-cols-fluid justify-center auto-rows-[minmax(21rem,_1fr)] gap-10 lg:gap-18">
       {countriesFilteredBySearchAndRegion.map((country) => (
         <li key={country.name.common}>
-          <Link href={`/country/${country.cca3}`}>
+          <Link
+            href={`/country/${country.cca3}`}
+            className="block h-full focus-visible"
+          >
             <CountryCard country={country} />
           </Link>
         </li>

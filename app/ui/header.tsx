@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="bg-light-secondary dark:bg-dark-secondary p-4 shadow-[0_0.125rem_0.25rem_0_rgba(0,0,0,0.06)]">
       <div className="flex justify-between items-center max-w-[80rem] mx-auto">
-        <Link href="/">
+        <Link href="/" className="focus-visible">
           <Image
             src="/logo.svg"
             alt="Where in the world? - Home"

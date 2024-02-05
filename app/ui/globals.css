@@ -13,10 +13,13 @@
     --color-input-light: 0deg 0% 52%;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
+  @layer components {
+    .focus-visible {
+      @apply focus-visible:outline focus-visible:outline-default dark:focus-visible:outline-inverted focus-visible:outline-4 focus-visible:outline-offset-2;
+    }
+  }
+
+  :is(h1, h2, h3, h4) {
     text-wrap: balance;
   }
 }
