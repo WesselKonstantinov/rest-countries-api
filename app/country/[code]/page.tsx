@@ -27,7 +27,7 @@ export default async function DetailPage({ params }: Params) {
         <li role="listitem" key={country.cca3}>
           <Link
             href={`/country/${country.cca3}`}
-            className="block px-4 py-1.5 rounded-sm bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.25rem_0.0625rem_rgba(0,0,0,0.1)] text-xs md:text-sm font-light text-center focus-visible"
+            className="block px-4 py-1.5 rounded-sm bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.25rem_0.0625rem_rgba(0,0,0,0.1)] text-xs md:text-sm font-light text-center focus-visible transition-colors hover:text-hover-light dark:hover:text-hover-dark"
           >
             {country.name.common}
           </Link>
@@ -44,7 +44,7 @@ export default async function DetailPage({ params }: Params) {
     <div className="mx-3 md:mx-0 mt-10 md:mt-20">
       <Link
         href="/"
-        className="w-fit px-6 py-[0.375rem] md:px-9 md:py-2 flex items-center gap-2 md:gap-[0.625rem] rounded-sm md:rounded-md bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.4375rem_0_rgba(0,0,0,0.29)] text-sm md:text-base font-light focus-visible"
+        className="w-fit px-6 py-[0.375rem] md:px-9 md:py-2 flex items-center gap-2 md:gap-[0.625rem] rounded-sm md:rounded-md bg-light-secondary dark:bg-dark-secondary shadow-[0_0_0.4375rem_0_rgba(0,0,0,0.29)] text-sm md:text-base font-light focus-visible transition-colors hover:text-hover-light dark:hover:text-hover-dark"
       >
         <ArrowLeftIcon className="size-[1.125rem] md:size-5" />
         <span>Back</span>

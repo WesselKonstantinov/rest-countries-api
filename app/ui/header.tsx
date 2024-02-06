@@ -13,7 +13,7 @@ export default function Header() {
             width={230}
             height={19}
             priority
-            className="w-[8.4375rem] md:w-[14.375rem] h-auto dark:invert"
+            className="w-[8.4375rem] md:w-[14.375rem] h-auto dark:invert hover:scale-105 transition-transform"
           />
         </Link>
         <ThemeSwitcher />

@@ -11,6 +11,8 @@
     --color-text-dark: 0deg 0% 100%;
     --color-text-light: 200deg 15% 8%;
     --color-input-light: 0deg 0% 52%;
+    --color-hover-light: 210deg 42% 35%;
+    --color-hover-dark: 206deg 36% 79%;
   }
 
   @layer components {

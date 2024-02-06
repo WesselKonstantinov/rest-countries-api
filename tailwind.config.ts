@@ -33,6 +33,8 @@ const config: Config = {
         "light-primary": "hsl(var(--color-text-light) / 1)",
         "light-secondary": "hsl(var(--color-input-light) / 1)",
         dark: "hsl(var(--color-text-dark) / 1)",
+        "hover-light": "hsl(var(--color-hover-light) / 1)",
+        "hover-dark": "hsl(var(--color-hover-dark) / 1)",
       },
     },
   },

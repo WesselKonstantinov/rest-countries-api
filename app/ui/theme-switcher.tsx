@@ -19,7 +19,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className="inline-flex gap-2 items-center py-4 md:py-3 font-semibold text-xs md:text-base focus-visible"
+      className="inline-flex gap-2 items-center py-4 md:py-3 font-semibold text-xs md:text-base focus-visible transition-colors hover:text-hover-light dark:hover:text-hover-dark"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? (
