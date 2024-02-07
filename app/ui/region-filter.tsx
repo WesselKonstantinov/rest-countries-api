@@ -28,6 +28,7 @@ export default function RegionFilter() {
         defaultValue={searchParams.get("region")?.toString()}
         onChange={(e) => handleSelect(e.target.value)}
         className="size-full px-6 py-3.5 md:py-[1.125rem] appearance-none bg-transparent border-none text-xs md:text-sm focus-visible"
+        aria-describedby="region-filter-description"
       >
         <option value="">Filter by Region</option>
         <option value="africa">Africa</option>
@@ -37,6 +38,9 @@ export default function RegionFilter() {
         <option value="oceania">Oceania</option>
       </select>
       <ChevronDownIcon className="size-3 md:size-3.5 absolute top-1/2 -translate-y-1/2 right-[1.125rem]" />
+      <p className="sr-only" id="region-filter-description">
+        Changing the filter will change the listed countries
+      </p>
     </div>
   );
 }
