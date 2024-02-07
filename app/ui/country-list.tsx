@@ -15,22 +15,27 @@ export default async function CountryList({ searchParams }: SearchParams) {
         .includes(searchParams?.region?.toLowerCase() || "")
   );
 
-  if (!countriesFilteredBySearchAndRegion.length) {
-    return <p className="mt-8 md:mt-12">No countries found.</p>;
-  }
-
   return (
-    <ul className="mt-8 md:mt-12 grid grid-cols-fluid justify-center auto-rows-[minmax(21rem,_1fr)] gap-10 lg:gap-18">
-      {countriesFilteredBySearchAndRegion.map((country) => (
-        <li key={country.name.common} className="relative">
-          <Link
-            href={`/country/${country.cca3}`}
-            className="block h-full focus-visible after:rounded after:absolute after:inset-0 after:overflow-hidden after:bg-dark-primary dark:after:bg-light-primary after:opacity-0 after:transition after:duration-300 after:ease-in-out hover:after:opacity-10"
-          >
-            <CountryCard country={country} />
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div className="mt-8 md:mt-12">
+      <div aria-live="assertive">
+        {countriesFilteredBySearchAndRegion.length === 0 && (
+          <p>No countries found.</p>
+        )}
+      </div>
+      {countriesFilteredBySearchAndRegion.length > 0 && (
+        <ul className="grid grid-cols-fluid justify-center auto-rows-[minmax(21rem,_1fr)] gap-10 lg:gap-18">
+          {countriesFilteredBySearchAndRegion.map((country) => (
+            <li key={country.name.common} className="relative">
+              <Link
+                href={`/country/${country.cca3}`}
+                className="block h-full focus-visible after:rounded after:absolute after:inset-0 after:overflow-hidden after:bg-dark-primary dark:after:bg-light-primary after:opacity-0 after:transition after:duration-300 after:ease-in-out hover:after:opacity-10"
+              >
+                <CountryCard country={country} />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 }
